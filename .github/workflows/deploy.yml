@@ -35,7 +35,7 @@ jobs:
             deploymentName: ${{ github.run_number}}
             resourceGroupName: ${{ inputs.resourceGroupName}}
             template: ./deploy/main.bicep
-            paramters: >
+            parameters: >
                 environmentType=${{ inputs.environmentType}}
             deploymentMode: Validate
         - if: inputs.environmentType == 'Production'
