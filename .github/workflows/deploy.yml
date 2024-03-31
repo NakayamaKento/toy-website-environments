@@ -10,9 +10,9 @@ on:
                 required: true
                 type: string
         secrets:
-            Azure_CLIEND_ID:
+            AZURE_CLIENT_ID:
                 required: true
-            AZURE_TENATN_ID:
+            AZURE_TENANT_ID:
                 required: true
             AZURE_SUBSCRIPTION_ID:
                 required: true

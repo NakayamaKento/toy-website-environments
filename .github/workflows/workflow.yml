@@ -21,7 +21,7 @@ jobs:
     uses: ./.github/workflows/deploy.yml
     needs: lint
     with:
-      environment: Test
+      envuronmentType: Test
       resourceGroupName: ToyWebsiteTest
     secrets:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_TEST }}
@@ -33,7 +33,7 @@ jobs:
     uses: ./.github/workflows/deploy.yml
     needs: deploy-test
     with:
-      environment: Production
+      envuronmentType: Production
       resourceGroupName: ToyWebsiteProduction
     secrets:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_PRODUCTION }}
