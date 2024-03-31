@@ -42,7 +42,7 @@ jobs:
           uses: azure/arm-deploy@v2
           name: Run what-if
           with:
-            failOnStdErr: faile
+            failOnStdErr: false
             resourceGroupName: ${{ inputs.resourceGroupName}}
             template: ./deploy/main.bicep
             parameters: >
