@@ -55,7 +55,7 @@ jobs:
             parameters: >
                 environmentType=${{ inputs.environmentType}}
                 reviewApiUrl=${{ inputs.reviewApiUrl }}
-                reviewApikKey=${{ secrets.reviewApiKey}}
+                reviewApiKey=${{ secrets.reviewApiKey}}
             additionalArguments: --what-if
 
     deploy:
